@@ -1,0 +1,91 @@
+/*Navigation*/
+@media screen and (min-width:400px ) and (max-width:900px) {
+    .h-primary-center {
+        margin-top: 255px;
+    
+    }
+    #home::before
+    {
+     height:465px;
+    }
+}
+#navbar{
+display: flex;
+flex-direction:column;
+justify-content: center;
+align-items: center;
+height:175px;
+}
+#logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#navbar ul li a{
+    font-size: 1.3rem;
+    padding:0px 5px;
+    padding-bottom: 7px;
+
+}
+/*Home*/
+#home{
+height: 250px;
+padding:3px 12px;
+}
+#home ::before{
+    height:400px;
+    width:100%;
+}
+#home p{
+    font-size: 18px;
+    padding:0;
+}
+/*Services*/
+#serve{
+    flex-direction:column;
+}
+#serve .box{
+    flex-direction:column;
+}
+
+#serve .box img {
+    height: 90px;
+}
+/*clients*/
+#client-section{
+flex-wrap: wrap;
+}
+#clients{
+    padding: 4px;
+}
+.class-item-1 img{
+    margin: auto;
+    height: 90px;
+    
+}
+.class-item img{
+    height: 90px;
+    
+}
+/*Contact*/
+#contact-box form{
+width:70%;
+}
+/*Footer*/
+footer{
+    font-size: 12px;
+
+}
+/*utility classes*/
+.h-primary{
+font-size: 2rem;
+
+}
+.h-primary-center
+{
+    margin-top:74px;
+}
+.btn{
+    font-size: 12px;
+    padding:4px 8px;
+}

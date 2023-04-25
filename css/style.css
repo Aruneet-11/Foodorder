@@ -1,0 +1,215 @@
+/*CSS Reset*/
+*{
+    margin:0;
+    padding: 0;
+}
+:root{
+--navbar-height:49px;
+}
+/*Navbar*/
+#navbar{
+    display:flex;
+    position:relative;
+    height:100px;
+    top:0px;
+}
+/*Logo and Image*/
+#logo{
+    margin:-5px 5px;
+}
+#logo img{
+    height:100px;
+    width:100px;
+    margin:3px 6px;
+    padding:10px;
+}
+/*Styling of the list items*/
+#navbar ul {
+    display: flex;
+    list-style-type: none;
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    height:100%;
+    width:100%;
+    position: absolute;
+    top: 0px;
+    left:0px;
+    z-index: -1;
+     opacity: 1.02;
+}
+#navbar ul li a{
+display: block;
+text-decoration: none;
+margin:10px 20px;
+padding:20px;
+font-size: 33px;
+font-weight: bold;
+color: white;
+font-family: 'Hina Mincho', serif;
+}
+#navbar ul li a:hover{
+    color:black;
+}
+/*Home Section*/
+#home{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 20px;
+    height:340px;
+    font-family: 'Hina Mincho', serif;
+    box-sizing: border-box;
+}
+#home::before{
+    content: "";
+    background:url(../img/o2hgtlathgqavoubi8dwybfpadfvd1wxjcwh0zgcmcf02xhridh0xawmfrecbzjt-.jpg) no-repeat center center/cover;
+    height:70%;
+    width:100%;
+    position: absolute;
+    top:0px;
+    left: 0px;
+    z-index: -1;
+    opacity: 0.9;
+}
+.h-primary{
+  font-size: 3.8rem;
+  padding: 12px;
+  
+}
+#home h1{
+   color: white;
+   text-align: center;
+}
+#home p{
+    color: white;
+    font-size:1.5rem;
+    text-align: center;
+
+}
+.btn{
+    padding: 6px 20px;
+    border:2px solid white;
+    background-color: rgb(68, 42, 42);
+    color: white;
+    margin: 17px;
+    cursor: pointer;
+    font-size: 1.5rem;
+    border-radius: 12px;
+}
+.btn:hover{
+    background-color: rgba(196, 181, 181, 0.329);
+}
+/*Services sector*/
+#serve{
+    display: flex;
+    margin:60px;
+}
+#serve .box{
+    border: 2px solid brown;
+    padding:12px;
+    margin:12px 15px;
+    border-radius: 23px;
+    background-color: rgba(252, 246, 245, 0.959);
+}
+#serve .box img{
+    height:150px;
+    display: block;
+    margin: auto;
+}
+#serve .box p{
+    font-family: 'Hina Mincho', serif;
+    font-size: 20px;
+}
+.h-primary-center{
+    text-align: center;
+    font-weight: bold;
+    font-size: 50px;
+    font-family: 'Hina Mincho', serif;
+    margin-top:55px;
+}
+.center{
+    text-align: center;
+}
+.h2-secondary-center{
+    text-align: center;
+    font-family: 'Hina Mincho', serif;
+    font-size: 2.3rem;
+}
+/* Client section*/
+#client-section::before{
+ content: " ";
+ background-image: url(../img/breakfast-690128_960_720.webp);
+ height: 100%;
+ width: 100%;
+ position:absolute;
+ z-index:-1;
+ opacity: 0.4;
+ background-repeat: no-repeat;
+ background-position: center;
+ background-size: cover;
+
+}
+#clients{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding: 34px;
+}
+#client-section{
+    position: relative;
+    height: 344px;
+}
+.class-item-1 img{
+    margin: auto;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+}
+.class-item img{
+    height: 140px;
+}
+#contact{
+position:relative;
+
+}
+#contact:before{
+ content:"";
+  position: absolute;
+  height: 100%;
+  width:100%;
+  z-index: -1;
+  opacity: 0.6;
+  background: url(../img/contact-us-business-icon-computer-keyboard-with-globe_117856-2468.jpg)  no-repeat center center/cover ;
+}
+footer{
+    background: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#contact-box{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding: 34px;
+}
+#contact-box form{
+    width:40%;
+}
+#contact-box label{
+    font-size: 1.3rem;
+    font-family: 'Hina Mincho', serif;
+    font-weight: bold;
+}
+#contact-box input,
+#contact-box textarea{
+    width:100%;
+    padding :0.5rem;
+    font-size: 1.1rem;
+    border-radius: 9px;
+    border: 2px solid black;
+}
